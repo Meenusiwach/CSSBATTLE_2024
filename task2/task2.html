@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to right, #4B0082, #FF69B4); /* Purple to pink gradient background */
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* .avatar {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 10px;
+           
+      background-image: url("bean.jpeg");
+      background-position: center; 
+        } */
+        .avatar {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: -50px auto 10px; 
+            border: 5px solid white; 
+            overflow: hidden; 
+            background-image: url("bean.jpeg");
+            background-position: center;
+            background-size: cover; 
+        }
+        
+        .username {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #4B0082;
+        }
+        .statistics {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            color: hsl(0, 0%, 4%);
+        }
+        .stat {
+            font-size: 0.9rem;
+        }
+        .icons {
+            font-size: 1.5rem;
+        }
+        .icons a {
+            text-decoration: none;
+            
+        }
+        
+        .icons ion-icon {
+           
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+        
+        .icons ion-icon:hover {
+           
+        }
+        .message-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .message-button:hover {
+            background-color: #2980b9;
+        }
+        .follow-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .follow-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar"></div>
+        <div class="username">BEAN BHAI</div>
+        <div class="statistics">
+            <div class="stat">1500 FOLLOWERS</div>
+            <div class="stat">20 FOLLOWING</div>
+            <div class="stat">150 POSTS</div>
+            <div class="stat">40 WORKS</div>
+        </div>
+        <div class="icons">
+            <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-google"></ion-icon>
+            </a>
+            
+        </div>
+        <button class="message-button">MESSAGE</button>
+        <button class="follow-button">FOLLOW</button>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
