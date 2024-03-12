@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4B0082; /* Dark purple background */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 20px;
+            background-color: #330066; /* Darker purple for form */
+        }
+
+        .form-container h1 {
+            font-size: 24px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #220044; /* Even darker purple for input fields */
+            color: white;
+        }
+
+        .form-container button {
+            background-color: #FF69B4; /* Pink submit button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .info-container {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .info-container h1 {
+            font-size: 24px;
+        }
+
+        .info-container p {
+            font-size: 16px;
+        }
+
+        .social-icons {
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .login-info {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .input {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #35a1cb;
+            color: white;
+        }
+        .submit-button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4285f4; /* Google Blue color, you can change this */
+            color: white;
+            cursor: pointer;
+            
+        }
+        .menu{
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+        
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+        
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+        
+        ul li a:hover{
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="form-container">
+            <h1>JUST SAY HELLO! <br>JUST LET US KNOW MORE ABOUT YOU!</h1>
+            <div class="login">
+                <div class="login-info">
+                    <input class="input" type="text" placeholder="Firstname">
+                    <input class="input" type="text" placeholder="Lastname">
+                </div>
+                <div class="login-info">
+                    <input class="input" type="text" placeholder="Mail">
+                    <input class="input" type="text" placeholder="Contact">
+                   
+                </div>
+                <div class="login-info">
+                    
+                    <input class="input" type="text" placeholder="message" rows ="5">
+                </div>
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="info-container">
+            <h1>CONTACT INFORMATION</h1>
+            <p>CSED, MNNIT ALLAHABAD PRAYAGRAJ – 211004</p>
+            <p>CALL US: +91-4794685713</p>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
